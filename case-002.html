@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#241514"><link rel="icon" href="site-icon.svg" type="image/svg+xml"><link rel="manifest" href="site.webmanifest"><meta name="application-name" content="The Mystery Club"><meta property="og:site_name" content="The Mystery Club"><meta property="og:title" content="Case 002 — The Girl in the Last Photograph"><meta property="og:description" content="Investigate the locked darkroom, the missing archivist, and the photograph uploaded after the room was sealed."><meta property="og:type" content="website"><meta property="og:image" content="social-card.svg"><meta name="twitter:card" content="summary_large_image"><meta name="robots" content="noindex,follow">
+  <meta name="description" content="Open the second Mystery Club investigation: The Girl in the Last Photograph.">
+  <title>Case 002 — The Mystery Club</title>
+  <link rel="stylesheet" href="case-002.css">
+</head>
+<body>
+  <div class="film-grain" aria-hidden="true"></div>
+  <div class="page-shell" id="casePage" hidden>
+    <header class="chapter-bar">
+      <a href="index.html#top" class="mini-brand"><span>M·C</span><i>THE MYSTERY CLUB</i></a>
+      <div class="chapter-path"><span>ARCHIVE</span><b>/</b><span>CASE 002</span><b>/</b><strong>THE LAST PHOTOGRAPH</strong></div>
+      <a class="return-link" href="index.html#suspects">← CASE 001</a>
+    </header>
+    <main>
+      <section class="case-hero">
+        <div class="hero-copy">
+          <span class="file-label">CASE FILE 002 / 003 <i>CHAPTER TWO</i></span>
+          <h1>The Girl in the<br><em>Last Photograph</em></h1>
+          <p>One locked darkroom. One missing archivist. One photograph uploaded after the room was sealed.</p>
+          <a href="#investigation" class="start-link">BEGIN INVESTIGATION <span>↓</span></a>
+        </div>
+        <div class="hero-photo" role="img" aria-label="An aged photograph of a girl in an empty cinema">
+          <div class="photo-edge"><div class="photo-hall"><div class="screen-glow"></div><div class="seat-row seat-a"></div><div class="seat-row seat-b"></div><div class="photo-girl"><i></i><b></b></div><div class="scratches"></div></div><span class="photo-number">PRINT B—17 · FOUND 02:13</span></div>
+          <span class="photo-stamp">DO NOT<br>DEVELOP</span>
+        </div>
+        <div class="hero-footer"><span>MARROW HOUSE CINEMA · 3 NIGHTS AGO</span><span>THE DARKROOM WAS LOCKED FROM THE INSIDE</span></div>
+      </section>
+      <section class="briefing" id="investigation">
+        <div class="section-kicker"><span>01 — THE DISAPPEARANCE</span><i></i><span>RECOVERED FILES: 03</span></div>
+        <div class="brief-grid"><div><span class="eyebrow">MISSING PERSON</span><h2>Samira Vale</h2><p class="role-line">ARCHIVE VOLUNTEER · PHOTOGRAPHER</p></div><div class="brief-text"><p>Samira was cataloguing old prints at Marrow House, a cinema that closed before sunrise. The projection booth was sealed at 1:48 a.m. No window was open. No one saw her leave.</p><p>At 2:13, her camera uploaded a photograph of a girl standing in the empty cinema hall. Police called it a delayed file. The time on the print says otherwise.</p><div class="note-line"><b>YOUR TASK</b><span>Find out when the photo was taken—and why someone removed the name from the spare-key log.</span></div></div></div>
+      </section>
+      <section class="files-section">
+        <div class="section-kicker"><span>02 — EXAMINE THE FILES</span><i></i><span>CLICK TO TURN EACH OVER</span></div>
+        <div class="file-grid">
+          <article class="file-card"><div class="file-top"><span>FILE 01</span><span>◉ PRINT</span></div><div class="mini-print print-one"><div class="mini-screen"></div><div class="mini-figure"></div><span>LH / B—17</span></div><h3>The final photograph</h3><p>A silver print, scanned from Samira’s camera.</p><button data-case2-clue="photo">TURN OVER THE PRINT <b>＋</b></button><div class="file-reveal" id="case2-photo" hidden></div></article>
+          <article class="file-card"><div class="file-top"><span>FILE 02</span><span>⌑ ACCESS LOG</span></div><div class="key-log"><span>MARROW HOUSE / KEY REGISTER</span><p>01:31 &nbsp; SPARE KEY OUT</p><p>01:48 &nbsp; BOOTH SEALED</p><p>01:54 &nbsp; KEY RETURNED</p><b>NAME: ———————</b></div><h3>Projection booth access</h3><p>One door. One key. A seal nobody remembers breaking.</p><button data-case2-clue="door">READ THE MAINTENANCE LOG <b>＋</b></button><div class="file-reveal" id="case2-door" hidden></div></article>
+          <article class="file-card"><div class="file-top"><span>FILE 03</span><span>⌁ CAMERA</span></div><div class="camera-clock"><div><small>CAMERA CLOCK</small><strong>02:13</strong><span>UPLOAD COMPLETE</span></div><i>OFFLINE</i></div><h3>Upload history</h3><p>The camera had no connection during the storm.</p><button data-case2-clue="upload">CHECK THE CAMERA CLOCK <b>＋</b></button><div class="file-reveal" id="case2-upload" hidden></div></article>
+        </div>
+        <div class="file-progress"><span id="caseTwoProgress">0 / 3 FILES EXAMINED</span><i><b id="caseTwoProgressFill"></b></i></div>
+      </section>
+      <section class="timeline-section" id="timelinePanel" hidden>
+        <div class="section-kicker"><span>03 — REBUILD THE LAST HALF-HOUR</span><i></i><span>YOUR TIMELINE</span></div>
+        <p class="timeline-intro">The upload time may not be the moment the photograph was taken. Put the events in the order they happened.</p>
+        <div class="timeline-events"><button data-event="photo"><small>EVENT A</small><b>1:46 · PHOTO TAKEN</b><span>Camera record</span></button><button data-event="door"><small>EVENT B</small><b>1:48 · BOOTH SEALED</b><span>Maintenance log</span></button><button data-event="upload"><small>EVENT C</small><b>2:13 · PHOTO UPLOADED</b><span>Camera record</span></button></div>
+        <div class="timeline-order" id="timelineOrder">TAP EVENTS TO BUILD THE SEQUENCE</div>
+        <button class="red-button" id="timelineSubmit" disabled>CHECK THE TIMELINE <span>↗</span></button>
+        <p class="case-result" id="caseTwoResult" hidden></p>
+      </section>
+      <section class="act-two" id="actTwo" hidden>
+        <div class="section-kicker"><span>04 — OPEN THE SECOND ENVELOPE</span><i></i><span>THREE NEW LEADS</span></div>
+        <div class="act-two-heading"><span class="eyebrow">THE TIMELINE WAS ONLY THE FIRST LIE</span><h2>Now find out who<br>left the room.</h2><p>Inspect the archive shelf, the torn key log, and Samira’s intake form. Then connect each new lead to the earlier evidence.</p></div>
+        <div class="act-two-files">
+          <article><span>LEAD A · ARCHIVE</span><h3>Shelf B—17</h3><p>A contact sheet from the cinema’s basement archive.</p><button data-act2-clue="archive">COMPARE THE NEGATIVE <b>＋</b></button><div id="act2-archive" hidden></div></article>
+          <article><span>LEAD B · KEY REGISTER</span><h3>The torn name</h3><p>Light pressure marks remain under the missing strip.</p><button data-act2-clue="key">READ THE IMPRESSION <b>＋</b></button><div id="act2-key" hidden></div></article>
+          <article><span>LEAD C · INTAKE FORM</span><h3>Samira’s signature</h3><p>A routine form recovered from the archive desk.</p><button data-act2-clue="signature">CHECK THE SIGNATURE <b>＋</b></button><div id="act2-signature" hidden></div></article>
+        </div>
+        <div class="act-two-progress" id="actTwoProgress">0 / 3 NEW LEADS EXAMINED</div>        <div class="chapter-hint"><div><b>NEED A NUDGE?</b><span>Open one gradual hint with a short sponsor break. Preview only—real ads are not connected.</span></div><button id="case2HintButton">WATCH PREVIEW SPONSOR BREAK <i>↗</i></button><p id="case2HintMessage" hidden></p></div>
+        <div class="case-two-board" id="caseTwoBoard" hidden><span class="section-kicker">05 — BUILD THE DEDUCTION</span><p>Select the two clues that support the same conclusion. Complete all three links.</p>
+          <div class="case-two-clues"><button data-linkclue="upload" disabled><small>CAMERA</small><b>Upload at 2:13</b></button><button data-linkclue="door" disabled><small>DOOR LOG</small><b>Seal at 1:48</b></button><button data-linkclue="photo" disabled><small>PRINT</small><b>The girl in the photo</b></button><button data-linkclue="archive" disabled><small>ARCHIVE</small><b>Contact sheet B—17</b></button><button data-linkclue="key" disabled><small>KEY LOG</small><b>Torn checkout name</b></button><button data-linkclue="signature" disabled><small>INTAKE FORM</small><b>Samira’s signature</b></button></div>
+          <p id="caseTwoBoardStatus" role="status">Examine the three new leads to start connecting evidence.</p><div class="case-two-links" id="caseTwoLinks"></div><button class="red-button" id="fileCaseTwo" disabled>SUBMIT CASE 002 <span>↗</span></button>
+        </div>
+        <div class="case-two-solved" id="caseTwoSolved" hidden><span class="eyebrow">CASE 002 · SOLVED</span><h2>The room was empty<br>because Samira left.</h2><p>She took the spare key, left before the booth was sealed, and queued the photo for later. The “girl” was an old print from the archive. The disappearance was a trail she chose to leave.</p><p>On the back of the duplicate: <strong>“Where the harbor bell rings twice, ask for the first voice.”</strong></p><a class="red-button" href="case-003.html?unlocked=1">OPEN CASE 003 <span>↗</span></a>
+        </div>
+      </section>      <section class="chapter-end"><span class="end-mark">M·C</span><p>Some photographs remember what people try to forget.</p><a href="index.html#suspects">← RETURN TO CASE 001</a></section>
+    </main>
+    <footer><span>THE MYSTERY CLUB · CASE 002</span><span>FICTIONAL INVESTIGATION</span><span>FILE REF. MARROW / B—17</span><a class="translate-link" href="https://translate.google.com/" target="_blank" rel="noopener noreferrer" title="Open Google Translate to translate the public website">TRANSLATE WITH GOOGLE ↗</a><a class="start-fresh" href="start-fresh.html">START FRESH</a></footer>
+  </div>
+  <div class="locked-screen" id="lockedScreen" hidden><div class="locked-card"><span class="lock-mark">M·C</span><small>CASE 002 · LOCKED</small><h1>Case 002 is locked for now.</h1><p>Solve Case 001 to unlock this investigation.</p><a href="index.html#suspects">← RETURN TO CASE 001</a></div></div>  <script src="case-002.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

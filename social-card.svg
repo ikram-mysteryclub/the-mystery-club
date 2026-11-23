@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#10191a"/><stop offset="1" stop-color="#283c3d"/></linearGradient><radialGradient id="moon"><stop stop-color="#f4e4ad"/><stop offset="1" stop-color="#d7c88c" stop-opacity=".2"/></radialGradient></defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <circle cx="925" cy="175" r="82" fill="url(#moon)"/>
+  <path d="M760 499 865 376l67 30 77-162 141 255z" fill="#111b1b"/>
+  <path d="M920 470V279l39-22 40 22v191z" fill="#d3d0bd"/><path d="M906 279h107l-12-16h-83z" fill="#202c2b"/><path d="M930 252h83v28h-83z" fill="#182424"/><rect x="965" y="258" width="15" height="18" fill="#e8d99e"/>
+  <path d="M981 263 1170 190 1170 330z" fill="#e8d99e" opacity=".12"/>
+  <text x="88" y="210" fill="#c4d36a" font-family="Arial,sans-serif" font-size="23" letter-spacing="5">THE INTERNET MYSTERY CLUB</text>
+  <text x="82" y="325" fill="#e8e5db" font-family="Georgia,serif" font-size="92">Every mystery</text>
+  <text x="82" y="420" fill="#e8e5db" font-family="Georgia,serif" font-size="92">leaves a <tspan fill="#c4d36a" font-style="italic">trace.</tspan></text>
+  <text x="91" y="492" fill="#aab4ab" font-family="Arial,sans-serif" font-size="18" letter-spacing="3">INSPECT · CONNECT · DISCOVER</text>
+  <rect x="50" y="50" width="1100" height="530" fill="none" stroke="#c4d36a" stroke-opacity=".22"/>
+</svg>

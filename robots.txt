@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ikram-mysteryclub.github.io/the-mystery-club/sitemap.xml

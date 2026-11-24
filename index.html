@@ -59,7 +59,7 @@
       </div>
     
       <div class="cipher-box"><div><span class="small-label">RECOVERED AUDIO · FILE LOCKED</span><h3>A message is hidden in the timeline.</h3><p>The receiver was unplugged at 11:50. The signal arrived at 12:07. How many minutes passed?</p></div><div class="cipher-controls"><label class="sr-only" for="cipherAnswer">Minutes between the events</label><input id="cipherAnswer" inputmode="numeric" maxlength="2" placeholder="MINUTES"><button class="primary-button" id="decodeButton">DECODE AUDIO <span>↗</span></button></div><p id="cipherResult" class="cipher-result" role="status" hidden></p></div>
-      <div class="hint-box"><div><span class="small-label">STUCK, DETECTIVE?</span><h3>Ask for a hint</h3><p>Each hint uses a short sponsor break. In this preview, the ad is a clearly marked demo.</p></div><button class="hint-ad-button" id="hintButton">WATCH PREVIEW SPONSOR BREAK <span>↗</span></button><p class="hint-message" id="hintMessage" hidden></p></div>
+      <div class="hint-box"><div><span class="small-label">STUCK, DETECTIVE?</span><h3>Ask for a hint</h3><p>Hints cost 3 ◈ Clue Credits. Earn credits by solving mini-puzzles in the Evidence Arcade.</p></div><button class="hint-ad-button" id="hintButton">OPEN HINT · 3 ◈</button><p class="hint-message" id="hintMessage" hidden></p></div>
     </section>
     <section class="suspects-section" id="suspects">
       <div class="section-heading"><span class="section-index">03 / PERSONS OF INTEREST</span><span class="section-rule"></span><span class="section-date">3 ON THE ISLAND</span></div>
@@ -74,6 +74,8 @@
   </main>
   <footer><span>THE MYSTERY CLUB © 2026</span><span>FICTIONAL CASE · ALL CLUES ARE PART OF THE STORY</span><span>ARCHIVE REF. MC-001</span><a class="start-fresh" href="start-fresh.html">START FRESH</a><a class="translate-link" href="https://translate.google.com/" target="_blank" rel="noopener noreferrer" title="Open Google Translate to translate the public website">TRANSLATE WITH GOOGLE ↗</a></footer>
   <dialog id="clueDialog"><button class="dialog-close" aria-label="Close clue">×</button><span class="small-label">FIELD NOTE / NEW DETAIL</span><p id="clueText"></p><button class="primary-button dialog-done">BACK TO EVIDENCE <span>↗</span></button></dialog>
+  <link rel="stylesheet" href="coin-arcade.css">
+  <script src="coin-arcade.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

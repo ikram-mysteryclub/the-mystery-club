@@ -1,9 +1,9 @@
 (() => {
   const walletKey = 'mc-clue-credits-v1';
   const games = [
-    { id: 'cipher', title: 'The Salt Cipher', prompt: 'A note says each letter moved one place forward. Decode FBTZ. What word was meant?', answer: 'easy', reward: 5, detail: 'Shift each letter back one place.' },
-    { id: 'timeline', title: 'The Broken Timeline', prompt: 'The photograph was taken at 1:46. The booth was sealed at 1:48. It uploaded at 2:13. Was it taken before or after the room was sealed?', answer: 'before', reward: 5, detail: 'Compare the capture time (1:46) with the seal time (1:48).' },
-    { id: 'tide', title: 'The Tide Relay', prompt: 'The tape was recorded first. Low tide closed the circuit at 12:07, then the voice played. Which triggered the playback: the tide or the bell?', answer: 'tide', reward: 5, detail: 'The tide closes the circuit; the bell only helps you notice the pattern.' }
+    { id: 'pattern', title: 'Number Pattern', prompt: 'What number comes next? 2, 6, 12, 20, 30, __', answer: '42', reward: 5, detail: 'Look at how much is added each time. The gaps grow by 2.' },
+    { id: 'scramble', title: 'Word Scramble', prompt: 'Rearrange these letters to name a planet: N · E · A · P · L · T', answer: 'planet', reward: 5, detail: 'Use all six letters. It is the planet we live on.' },
+    { id: 'riddle', title: 'Riddle Room', prompt: 'I have cities but no houses, forests but no trees, and water but no fish. What am I?', answer: 'map', reward: 5, detail: 'You can fold it, carry it, and use it to find places.' }
   ];
   const read = () => Number(localStorage.getItem(walletKey) || 0);
   const write = n => { localStorage.setItem(walletKey, String(n)); document.querySelectorAll('.credit-count').forEach(el => el.textContent = n); };
